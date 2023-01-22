@@ -1,0 +1,72 @@
+
+.person {
+    position: relative;
+    cursor: pointer;
+    padding: 12px 10% 16px;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.person:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 90%;
+    height: 1px;
+    content: "";
+    background-color: #e6e6e6;
+    transform: translate(-50%, 5px);
+}
+
+.person img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+
+    border-radius: 40%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.person .name {
+    font-size: 18px;
+    line-height: 26px;
+    color:  rgba(0, 128, 145, 0.644);
+    font-weight: 600;
+    display: block;
+}
+
+.person .time {
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    right: 10%;
+    padding: 0 0 5px 5px;
+    color: #999;
+}
+
+.person .preview {
+    font-size: 14px;
+    display: inline-block;
+    overflow: hidden !important;
+    width: 70%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+.person.active,
+.person:hover {
+    background-color: rgba(255, 126, 143, 0.555);
+}
+
+.person.active span,
+.person:hover span {
+        color: #fff;
+        background: transparent;
+    }
+
+.person.active:after,
+.person:hover:after {
+        display: none
+    }

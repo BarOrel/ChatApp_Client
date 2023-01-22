@@ -1,0 +1,46 @@
+<div class="Chat">
+  <div class="chat-wrapper" >
+       
+      <div id="titleDiv">
+          <img  src="{{chat.chat.imgUrl}}"  alt="Person"  />
+          <span class="title">{{chat.chat.title}}<i class="fas fa-circle" style="color:limegreen"></i></span>
+          <div class="members">
+              <div *ngFor="let item of chat.chat.users ; let i = index" >
+                <span *ngIf="item.userName != Username">{{item.userName}} , </span>
+               </div> 
+        
+              </div>
+              
+              <a class="ChatMoreOp"><span class="material-symbols-outlined">
+               more_vert
+               </span></a> 
+               <button (click)="DeleteChat(chat.chat.id)" class="Delete_button">Delete</button>
+          
+          
+      </div>
+
+      <div class="chat" id="chat" #scrollBottom>
+
+                          <div *ngFor="let item of chat.messages"  [ngClass]="{'bubbleMe': item.userId == Username,'bubble other': item.userId != Username}">
+                            <p class="message-Username" *ngIf="item.userId != Username">{{item.userId}}</p>
+                              <span class="message-text">{{item.content}}</span>
+                              <span class="message-time">{{item.sentTime| date:'h:mm '}}</span>
+                          </div>
+                         
+       </div>
+       <div id="writeDiv">
+          
+              <div class="write">
+                      <i class="fas fa-paperclip"></i>
+                      <textarea type="text" #MessageContent name="MessageContent" id="message-text" placeholder="Write a message..."></textarea>
+                      <i class="far fa-smile"></i>
+                      <button (click)="SendMessage(MessageContent.value,chat.chat.id)" type="submit" id="btn-send" >
+                      <i class="fas fa-paper-plane">Send</i>
+                      </button>
+
+
+              </div>
+           
+          </div>
+
+  </div>

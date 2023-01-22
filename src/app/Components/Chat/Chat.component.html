@@ -1,0 +1,7 @@
+<div class="person" *ngFor="let item of ChatRoomList " #ListOfChats (click)="OnClickLoadChat(item.chat.id)" >
+  <img [src]="item.chat.imgUrl"  alt="" />
+  <span class="name">{{item.chat.title}}</span>
+  <span class="time">{{item.sentTime}}</span>
+  <span class="preview">{{item.lastMessage.content}}</span>
+  
+</div>

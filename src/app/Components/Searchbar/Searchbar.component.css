@@ -1,0 +1,20 @@
+input{
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 20px;
+     font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: center;
+     font-size: 15px;
+     border: 2px solid rgba(255, 126, 143, 0.733);
+     color: #002413;
+     width: 70%;
+     height: 30px;
+     margin: 10px 0px 10px 12%;
+
+}
+input:focus {
+    outline: none !important;
+    border: 2px solid rgba(255, 126, 143, 0.733);
+    box-shadow: 4px 4px 4px rgba(255, 126, 143, 0.733);
+  }

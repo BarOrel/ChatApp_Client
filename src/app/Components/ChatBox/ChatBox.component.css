@@ -1,0 +1,197 @@
+
+/* ------------------------------- */
+
+
+
+
+#titleDiv {
+    width: 100%;
+    min-height: 70px;
+    
+    background-color: rgba(255, 126, 143, 0.555);
+    max-height: 70px;
+    border-bottom:solid 2px rgba(207, 102, 116, 0.555);
+    border-left:solid 2px rgba(207, 102, 116, 0.555);
+
+}
+
+    #titleDiv .title {
+        top: 1px;
+        margin: 7px 0px 0px 80px ;     
+        font-size: 35px;
+position: fixed;
+display: block;
+    }
+    #titleDiv img{   
+        width: 50px;
+        height: 50px;
+        margin: 10px 0px 0px 20px;
+       display: block;
+       position: fixed;
+        border-radius: 40%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    
+
+
+    .chat {
+        
+        height: calc(100vh - 160px);
+        overflow-y: scroll;
+             
+    }
+    
+        .chat .bubble:last-child {
+            margin-bottom: calc(60px + 1.1rem);
+        }
+    
+        .chat .bubble-wrapper {
+            width: 100vw;
+            height: fit-content;
+            position: relative;
+        }
+    
+        .chat .bubble {
+            padding: 7px 15px 12px 20px;
+            max-width: 33%;
+            width: fit-content;
+            border-radius: 20px;
+            position: relative;
+            display: inline-block;
+            clear: both;
+            margin: 25px;
+            margin-bottom: 2rem;
+        }
+        .bubbleMe{
+            padding: 7px 15px 12px 20px;
+            max-width: 33%;
+            width: fit-content;
+            border-radius: 20px;
+            position: relative;
+            color: #fff;;
+            clear: both;
+            margin: 13px;
+            margin-bottom: 2rem;
+            background-color: #557BF3;
+            float: right;
+        }
+    
+            .chat .bubble.me {
+                background-color: #557BF3;
+                float: right;
+            }
+    
+                .chat .bubble.me .message-text {
+                    color: #fff;
+                }
+    
+            .chat .bubble.other {
+                background-color: #F6F8FD;
+                float: left;
+            }
+    
+            .message-time {
+                text-align: right;
+                position: absolute;
+                right: 5px;
+                bottom: -1rem;
+            }
+    
+            .message-time {
+                color: #999;
+                font-size: 0.7rem;
+            }
+
+            .message-Username{
+                color:rgb(3, 112, 255);
+                margin: 6px 0px 2px 0px ;
+            }
+
+
+.members{
+    position: fixed;
+    display: flex;
+    margin: 48px 0px 0px 120px;
+    
+   
+    color: rgb(75, 75, 75);
+    font-size: 15px;
+    
+    
+}
+.Delete_button{
+float: right;
+
+}
+.ChatMoreOp{
+    float: right;
+    
+}
+
+
+
+            #writeDiv {
+                
+              
+                background-color: rgba(0, 128, 145, 0.418);
+                border-radius: 25px;
+            }
+            
+                #writeDiv .write {
+                    display: flex;
+                    
+                    align-items: center;
+                    padding: 10px ;
+                    margin: 10px 20px 10px 0px;
+                    
+                }
+            
+                    #writeDiv .write > i {
+                        
+                        margin: 0 10px;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                        transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
+            
+                        #writeDiv .write > i:hover {
+                            transform: scale(1.2);
+                        }
+            
+                    #writeDiv .write textarea {
+                        width: 90%;
+                        height: fit-content;
+                        margin: auto;
+                        border: none;
+                        outline: none;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        background-color: transparent;
+                        resize: none;
+                        overflow: hidden;
+                        line-height: 20px;
+                        font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+            
+            #btn-send {
+                padding: 8px 20px 8px 20px;
+                background-color: #557BF3;
+                border: none;
+                border-radius: 30px;
+                outline: none;
+                transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            
+                #btn-send:hover {
+                    transform: scale(1.1);
+                }
+            
+                #btn-send i {
+                    color: #fff;
+                    font-size: 20px;
+                    margin: 10px 6px;
+                    margin-right: 7px;
+                    padding: 0;
+                }
+            

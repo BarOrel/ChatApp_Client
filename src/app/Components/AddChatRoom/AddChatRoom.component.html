@@ -1,0 +1,47 @@
+<div class="Page">
+  <div class="Form">
+    <h1>Add Chat</h1>
+    <input placeholder="Title" type="text" #Title />
+    <input placeholder="Description" type="text" #Description />
+    <input placeholder="Image URL" type="text" #ImageUrl />
+
+    <button
+      (click)="AddChatRoom(Title.value, Description.value, ImageUrl.value)"
+    >Add</button>
+  </div>
+
+  <div class="ListAdded">
+    <h2>Added</h2>
+    <div *ngFor="let item of AddedUsers; let i = index" class="AddedPersons">
+      <span>{{ item }}</span>
+      <button (click)="RemoveUser(i)" class="button"><span class="material-symbols-outlined">
+        remove
+        </span></button>
+    </div>
+  </div>
+
+  <div class="List">
+    <h2>Choose Users</h2>
+    <input
+      placeholder="Search User"
+      class="SearchInput"
+      type="text"
+      #User
+      name="search"
+      [(ngModel)]="SearchText"
+    />
+    <div class="listofusers">
+      <div
+        class="person"
+        (click)="AddUsers(item.username)"
+        *ngFor="let item of userList | filter : SearchText"
+      >
+        <div>
+          <span class="name">{{ item.fullname }}</span>
+          <span class="preview">Username : {{ item.username }}</span>
+          <img />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
