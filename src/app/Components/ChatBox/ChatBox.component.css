@@ -19,8 +19,8 @@
         top: 1px;
         margin: 7px 0px 0px 80px ;     
         font-size: 35px;
-position: fixed;
-display: block;
+    position: fixed;
+    display: block;
     }
     #titleDiv img{   
         width: 50px;
@@ -133,7 +133,7 @@ float: right;
 
             #writeDiv {
                 
-              
+            
                 background-color: rgba(0, 128, 145, 0.418);
                 border-radius: 25px;
             }
@@ -159,13 +159,13 @@ float: right;
                             transform: scale(1.2);
                         }
             
-                    #writeDiv .write textarea {
+                    #writeDiv .write input {
                         width: 90%;
                         height: fit-content;
                         margin: auto;
                         border: none;
                         outline: none;
-                        font-size: 1.1rem;
+                        font-size: 1.5rem;
                         font-weight: 600;
                         background-color: transparent;
                         resize: none;

@@ -13,9 +13,13 @@ import { MessageService } from 'src/app/Services/Message/Message.service';
 export class ChatBoxComponent implements OnInit, AfterViewChecked {
   @ViewChild('scrollBottom')
   private scrollBottom!: ElementRef;
+
+
   chat:any;
   messages:any;
   index:number = 0;
+  InputText = ''
+  
   get Username():string{
     return this.authService.Username();
   }
@@ -66,13 +70,16 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked {
   SendMessage(MessageContent:any,ChatId:any)
   {
     if(MessageContent != ''){
+
     this.model.ChatId = ChatId;
     this.model.MessageContent = MessageContent;
     this.model.UserId = this.authService.Username();
     this.messageService.Add(this.model).subscribe((data)=>{
+  
     this.chatService.LoadChat(ChatId)
-    });
     
+    });
+    this.InputText = ' ';
     }
     else { alert("Message Cannnot Be Empty.")}
   }

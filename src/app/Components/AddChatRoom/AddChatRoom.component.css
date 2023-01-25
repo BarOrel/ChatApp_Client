@@ -7,7 +7,7 @@
 .SearchInput{
     overflow: hidden;
     padding: 17px 30px 17px 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0px 0px 5px 6%;
     font-size: 15px;
     box-shadow: 5px 5px 15px rgba(0, 128, 145, 0.644) ;
@@ -114,6 +114,7 @@
   border-top: 2px solid rgba(0, 128, 145, 0.644);
   border-left: 2px solid rgba(0, 128, 145, 0.644);
   border-bottom: 2px solid rgba(0, 128, 145, 0.644);
+  
 }
 .ListAdded h2{
   margin: 20px 0px 20px 7%;
