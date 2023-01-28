@@ -39,7 +39,7 @@
     .chat {
         height: calc(100vh - 160px);
         overflow-y: scroll;
-        background-color: #f1fdfa;
+        background-color: #f1fdfa7e;
         
              
     }
@@ -136,7 +136,7 @@ float: right;
             #writeDiv {
               
                 background-color: #66998c;
-                height: 12vh;
+                height: 10vh;
             }
             
                 #writeDiv .write {

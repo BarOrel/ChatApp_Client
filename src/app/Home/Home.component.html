@@ -1,5 +1,6 @@
 <div class="Main">
-    <div class="Menu">
+    <div class="Menu" *ngIf="index == false">
+        <app-DropdownMenu></app-DropdownMenu>
         <app-Navbar></app-Navbar>
         <app-Searchbar></app-Searchbar>
         <app-Chat></app-Chat>

@@ -18,6 +18,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ChatRoomService } from './Services/ChatRoom/ChatRoom.service';
 import { ChatComponent } from './Components/Chat/Chat.component';
 import { TokenInterseptorService } from './Services/User/Auth/TokenInterseptor/TokenInterseptor.service';
+import { DropdownMenuComponent } from './Components/DropdownMenu/DropdownMenu.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { TokenInterseptorService } from './Services/User/Auth/TokenInterseptor/T
       AddChatRoomComponent,
       ChatBoxComponent,
       ErrorNotFoundComponent,
+      DropdownMenuComponent
       
    ],
   imports: [

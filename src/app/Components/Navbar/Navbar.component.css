@@ -6,7 +6,7 @@
     flex-flow: row nowrap;
     min-height: 50px;
     min-width: 250px;
-    max-height: 90px;
+
     border-bottom: solid 2px rgba(0, 98, 110, 0.644);
     
   
@@ -29,8 +29,4 @@
     margin-top: auto;
     font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-}
-.dropdown{
-    float: right;  
-    margin: 10px 0px 0px auto ;
 }

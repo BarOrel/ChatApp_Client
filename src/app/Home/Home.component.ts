@@ -7,11 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./Home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  index:boolean = false
   constructor(private router:Router) { }
 
   ngOnInit() {
     
   }
 
+  ChangeIndex(){
+    if(this.index){
+      this.index  = false 
+    }
+    else {this.index = true}
+
+  }
 }
