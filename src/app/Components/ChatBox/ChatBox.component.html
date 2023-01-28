@@ -32,13 +32,12 @@
           
               <div class="write">
                       <i class="fas fa-paperclip"></i>
-                      <input type="text" #MessageContent name="MessageContent" class="MessageBox" [(ngModel)]="InputText"  placeholder="Write a message..."/>
+                      <input type="text" #MessageContent name="MessageContent" class="MessageBox" [(ngModel)]="InputText"  placeholder="Write a message..." (keydown.enter)="SendMessage(MessageContent.value,chat.chat.id)"/>
                       <i class="far fa-smile"></i>
-                      <button (click)="SendMessage(MessageContent.value,chat.chat.id)" type="submit" id="btn-send" >
+                      <button (click)="SendMessage(MessageContent.value,chat.chat.id)"  type="submit" class="button-81" >
                       <i class="fas fa-paper-plane">Send</i>
                       </button>
-
-
+              
               </div>
            
           </div>

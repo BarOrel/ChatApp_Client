@@ -69,8 +69,8 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked {
   
   SendMessage(MessageContent:any,ChatId:any)
   {
-    if(MessageContent != ''){
-
+    if(MessageContent != ' '){
+      
     this.model.ChatId = ChatId;
     this.model.MessageContent = MessageContent;
     this.model.UserId = this.authService.Username();

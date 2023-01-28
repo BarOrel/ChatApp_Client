@@ -8,10 +8,10 @@
     width: 100%;
     min-height: 70px;
     
-    background-color: rgba(255, 126, 143, 0.555);
+    background-color: #41695f;
     max-height: 70px;
-    border-bottom:solid 2px rgba(207, 102, 116, 0.555);
-    border-left:solid 2px rgba(207, 102, 116, 0.555);
+    border-bottom:solid 2px rgba(0, 98, 110, 0.644);
+    
 
 }
 
@@ -19,8 +19,9 @@
         top: 1px;
         margin: 7px 0px 0px 80px ;     
         font-size: 35px;
-    position: fixed;
-    display: block;
+        position: fixed;
+        display: block;
+        color: #ffff;
     }
     #titleDiv img{   
         width: 50px;
@@ -38,6 +39,7 @@
     .chat {
         height: calc(100vh - 160px);
         overflow-y: scroll;
+        background-color: #f1fdfa;
         
              
     }
@@ -73,12 +75,12 @@
             clear: both;
             margin: 13px;
             margin-bottom: 2rem;
-            background-color: #557BF3;
+            background-color:  #599485;
             float: right;
         }
     
             .chat .bubble.me {
-                background-color: #557BF3;
+                background-color: #3b6459;
                 float: right;
             }
     
@@ -132,18 +134,20 @@ float: right;
 
 
             #writeDiv {
-                
-            
-                background-color: rgba(0, 128, 145, 0.418);
-                border-radius: 25px;
+              
+                background-color: #66998c;
+                height: 12vh;
             }
             
                 #writeDiv .write {
-                    display: flex;
                     
+                    position: absolute;
+                    width: 70%;
                     align-items: center;
-                    padding: 10px ;
-                    margin: 10px 20px 10px 0px;
+                    background-color:  #508175;
+                    margin: 1% 20px 10px 5vw;
+                    border-radius: 30px;
+                    
                     
                 }
             
@@ -160,6 +164,7 @@ float: right;
                         }
             
                     #writeDiv .write input {
+                        color: #ffff;
                         width: 90%;
                         height: fit-content;
                         margin: auto;

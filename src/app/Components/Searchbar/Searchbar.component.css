@@ -6,7 +6,7 @@ input{
      font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      text-align: center;
      font-size: 15px;
-     border: 2px solid rgba(255, 126, 143, 0.733);
+     border: 2px solid #71bba8;
      color: #002413;
      width: 70%;
      height: 30px;
@@ -15,6 +15,6 @@ input{
 }
 input:focus {
     outline: none !important;
-    border: 2px solid rgba(255, 126, 143, 0.733);
-    box-shadow: 4px 4px 4px rgba(255, 126, 143, 0.733);
+    border: 2px solid #71bba8;
+    box-shadow: 2px 2px 2px #5c998a;
   }

@@ -1,14 +1,14 @@
 .Navbar{
-    padding: 10px  10px 10px 5px;
-    background-color:  rgba(0, 128, 145, 0.644);
+    padding: 9px  10px 9px 5px;
+    background-color:  #71bba8;
     overflow: hidden;
     display: flex;
     flex-flow: row nowrap;
     min-height: 50px;
     min-width: 250px;
-    max-height: 50px;
+    max-height: 90px;
     border-bottom: solid 2px rgba(0, 98, 110, 0.644);
-    border-right: solid 2px rgba(0, 98, 110, 0.644);
+    
   
 }
 
