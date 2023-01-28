@@ -1,8 +1,22 @@
 .Main{
-        background-color:  rgba(0, 128, 145, 0.644);
-        width: 100%;
-        height: 100vh;
-        font-family: "Asap", sans-serif;
-        display: flex;
-    
+        background-color: rgba(0, 128, 145, 0.644);
+        height: 100vh; 
+        
+        
 }
+h1{color: #ffff;
+        text-align: center;}
+h2{color: #ffff;
+        text-align: center;
+}
+img{ height: 300px;
+        display: block;
+        margin-left: auto;
+        
+        margin-right: auto;}
+.Line{
+        margin: 42.5vh 0px 0px 0px;
+        height: 13px;
+        background-color:rgba(207, 102, 116, 0.856);
+}
+.Space{height: 13vh;}
