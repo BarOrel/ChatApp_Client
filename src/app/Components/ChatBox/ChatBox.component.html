@@ -2,28 +2,35 @@
   <div class="chat-wrapper" >
        
       <div id="titleDiv">
-          <img  src="{{chat.chat.imgUrl}}"  alt="Person"  />
-          <span class="title">{{chat.chat.title}}<i class="fas fa-circle" style="color:limegreen"></i></span>
+          <img  src="{{chat.chat.imgUrl}}" alt="Person" (error)="setDefaultPic()"  />
+          <span class="title">{{chat.chat.title}}<i class="fas fa-circle"  style="color:limegreen"></i></span>
           <div class="members">
-              <div *ngFor="let item of chat.chat.users ; let i = index" >
-                <span *ngIf="item.userName != Username">{{item.userName}} , </span>
-               </div> 
-        
+            
+            <div *ngFor="let item of chat.chat.users ; let i = index" >
+              <span *ngIf="item.userName != Username"> {{item.userName}} </span>
+            </div> 
+                
+               <div class="dropdown">
+                <button><span class="material-symbols-outlined">
+                  more_vert
+                  </span></button>
+                <div class="dropdown-options">
+                  <a href="#">Account</a>
+                  <a (click)="DeleteChat(chat.chat.id)">Delete</a>
+                  
+                </div>
               </div>
-              
-           
-          
+              </div>
           
       </div>
 
-      <div class="chat" id="chat" #scrollBottom>
+          <div class="chat" id="chat" #scrollBottom>
+              <div *ngFor="let item of chat.messages"  [ngClass]="{'bubbleMe': item.userId == Username,'bubble other': item.userId != Username}">
+              <p class="message-Username" *ngIf="item.userId != Username">{{item.userId}}</p>
+              <span class="message-text">{{item.content}}</span>
+              <span class="message-time">{{item.sentTime| date:'h:mm '}}</span>
+          </div> 
 
-                          <div *ngFor="let item of chat.messages"  [ngClass]="{'bubbleMe': item.userId == Username,'bubble other': item.userId != Username}">
-                            <p class="message-Username" *ngIf="item.userId != Username">{{item.userId}}</p>
-                              <span class="message-text">{{item.content}}</span>
-                              <span class="message-time">{{item.sentTime| date:'h:mm '}}</span>
-                          </div>
-                         
        </div>
        <div id="writeDiv">
           
@@ -34,9 +41,6 @@
                       <button (click)="SendMessage(MessageContent.value,chat.chat.id)"  type="submit" class="button-81" >
                       <i class="fas fa-paper-plane">Send</i>
                       </button>
-              
               </div>
-           
           </div>
-
   </div>

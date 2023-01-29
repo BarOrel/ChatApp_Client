@@ -19,6 +19,7 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked {
   messages:any;
   index:number = 0;
   InputText = ''
+  pic: any;
   
   get Username():string{
     return this.authService.Username();
@@ -65,6 +66,10 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked {
       
     }  
     else {  this.router.navigate([''])}
+  }
+
+  setDefaultPic() {
+    this.pic = "..assets/person.png";
   }
   
   SendMessage(MessageContent:any,ChatId:any)

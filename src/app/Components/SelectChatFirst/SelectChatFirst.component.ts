@@ -11,7 +11,7 @@ export class SelectChatFirstComponent implements OnInit {
 
   ngOnInit() {
     this.elementRef.nativeElement.ownerDocument
-    .body.style.backgroundColor = 'rgb(26, 151, 141)';
+    .body.style.backgroundColor = 'rgba(0, 98, 110, 0.644)';
   }
 
 }

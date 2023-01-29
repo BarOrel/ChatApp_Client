@@ -1,18 +1,12 @@
 
-/* ------------------------------- */
-
-
-
-
 #titleDiv {
     width: 100%;
     min-height: 70px;
-    
-    background-color: #41695f;
-    max-height: 70px;
+    z-index: 9999;
+    background-color:  #66998c;
+    z-index: 99;
     border-bottom:solid 2px rgba(0, 98, 110, 0.644);
     
-
 }
 
     #titleDiv .title {
@@ -40,8 +34,8 @@
         height: calc(100vh - 160px);
         overflow-y: scroll;
         background-color: #f1fdfa7e;
+        z-index: -2;
         
-             
     }
     
         .chat .bubble:last-child {
@@ -64,12 +58,14 @@
             clear: both;
             margin: 25px;
             margin-bottom: 2rem;
+            
         }
         .bubbleMe{
             padding: 7px 15px 12px 20px;
             max-width: 33%;
             width: fit-content;
             border-radius: 20px;
+            
             position: relative;
             color: #fff;;
             clear: both;
@@ -82,6 +78,7 @@
             .chat .bubble.me {
                 background-color: #3b6459;
                 float: right;
+                
             }
     
                 .chat .bubble.me .message-text {
@@ -117,7 +114,7 @@
     margin: 48px 0px 0px 120px;
     
    
-    color: rgb(75, 75, 75);
+    color: #ffff;
     font-size: 15px;
     
     
@@ -147,9 +144,13 @@ float: right;
                     background-color:  #508175;
                     margin: 1% 20px 10px 5vw;
                     border-radius: 30px;
-                    
+                   
                     
                 }
+                ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: rgba(255, 255, 255, 0.651);
+                    opacity: 1; /* Firefox */
+                  }
             
                     #writeDiv .write > i {
                         
@@ -199,4 +200,9 @@ float: right;
                     margin-right: 7px;
                     padding: 0;
                 }
-            
+                .dropdown{
+                    right: 10px;
+                    top: 3px;
+                    z-index: 9999;
+        
+                }
