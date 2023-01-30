@@ -1,3 +1,6 @@
+Chat App Client Project :
+To run the app you are required to run the server side as well.
+
 # ChatAppClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
