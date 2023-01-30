@@ -7,7 +7,7 @@
           <div class="members">
             
             <div *ngFor="let item of chat.chat.users ; let i = index" >
-              <span *ngIf="item.userName != Username"> {{item.userName}} </span>
+              <span *ngIf="item.userName != Username">, {{item.userName}} </span>
             </div> 
                 
                <div class="dropdown">

@@ -18,7 +18,6 @@ const routes: Routes = [
     { path : 'Settings' , component: SettingsMenuComponent },
     { path : 'AccountDetails' , component: AccountDetailsComponent  },
     { path : 'AddChat' , component:AddChatRoomComponent }
-    
   ]},
 
   { path : 'Login', component:LoginComponent },

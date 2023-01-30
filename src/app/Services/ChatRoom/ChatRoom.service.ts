@@ -29,6 +29,7 @@ export class ChatRoomService {
     GetChat(id:number){
       return this.http.get(this.BaseUrl+ "GetChat/" + id);
     }
+    
     Add(some:any){
       return this.http.post(this.BaseUrl+"Add", some);
     }
@@ -49,17 +50,17 @@ export class ChatRoomService {
        this.router.navigate(['Chat'])
        console.log(data)
     });
-
     }
+
     getClick(){
       return this.subject.asObservable();
     }
 
     LoadOnlyChat(Id:number){
       this.GetChat(Id).subscribe((data:any)=>
-     {
-      this.ChatId = Id
-        this.ChatData = data;
-        console.log(data)
-     });}
+         {
+           this.ChatId = Id
+           this.ChatData = data;
+           console.log(data)
+         });}
     }

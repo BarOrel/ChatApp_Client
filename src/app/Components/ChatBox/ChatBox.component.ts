@@ -36,7 +36,6 @@ export class ChatBoxComponent implements OnInit, AfterViewChecked {
     interval(1000)
     .subscribe(() => {
       this.Load();
-      
     });
   }
   clickEventSubscription = this.chatService.getClick().subscribe(()=>
