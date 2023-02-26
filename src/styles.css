@@ -52,6 +52,7 @@ font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   .dropdown {
     display: inline-block;
     position: fixed;
+    
     margin: 12px 0px 0px 34vh;
     z-index: 99999;
   }
@@ -93,7 +94,7 @@ font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     color: #000000;
     float: left;
-    
+    width: 150px;
     text-decoration: none;
     padding:10px 50% 10px 10px;
     border-bottom: 1px solid rgb(202, 202, 202);

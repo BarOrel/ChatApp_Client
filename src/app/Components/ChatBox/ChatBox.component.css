@@ -86,7 +86,8 @@
                 }
     
             .chat .bubble.other {
-                background-color: #F6F8FD;
+                background-color: #e9efff85;
+                border:1px solid rgba(201, 201, 201, 0.322); 
                 float: left;
             }
     

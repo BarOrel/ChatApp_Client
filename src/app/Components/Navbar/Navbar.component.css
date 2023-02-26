@@ -21,6 +21,7 @@
     object-fit: cover;
     border-radius: 40%;
     display: flex;
+    border: 1px solid;
 }
 
 .Navbar p{

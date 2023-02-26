@@ -48,7 +48,7 @@ export class ChatRoomService {
        this.ChatId = Id
        this.subject.next(this.getClick());
        this.router.navigate(['Chat'])
-       console.log(data)
+   
     });
     }
 
@@ -61,6 +61,6 @@ export class ChatRoomService {
          {
            this.ChatId = Id
            this.ChatData = data;
-           console.log(data)
+        
          });}
     }

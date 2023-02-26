@@ -26,7 +26,7 @@ export class ChatComponent implements OnInit {
     this.service.GetAll().subscribe((data)=> {
       if(data){
       this.ChatRoomList = data;
-      console.log(data)
+     
     }})
   }
 
