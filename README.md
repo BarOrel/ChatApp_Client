@@ -1,3 +1,22 @@
+Chat App Client Project :
+To run the app you are required to run the server side as well.
+
+
+Home Page : 
+
+![alt text](https://serving.photos.photobox.com/94932139638930c1947b9053aa6d300991852caf2bb540bec790bb3c2c59482eeaf0b657.jpg)
+
+Chat View : 
+
+![alt text](https://serving.photos.photobox.com/90586410f5cbc3061b5eb2cb818820abbf8cdef01fee329f3b64086eb1ca0d5b4c4bc402.jpg)
+ 
+ 
+The Login Page : 
+
+![alt text](https://serving.photos.photobox.com/27253842857ede4c0993ee660f30b4e1526afdb4959678834a0f1eba2f8b847244022091.jpg)
+
+
+
 # ChatAppClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
